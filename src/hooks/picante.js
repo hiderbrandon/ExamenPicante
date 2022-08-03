@@ -3,7 +3,6 @@
 const picante = (myArray) => {
 
     let sortedArray = myArray.sort();
-    console.log(sortedArray)
     let responseArray = [];
 
     let auxArray = [];
@@ -13,7 +12,6 @@ const picante = (myArray) => {
 
         if (sortedArray[i] - sortedArray[i - 1] == 1) {
             auxString += `${sortedArray[i]}`;
-            console.log(`nigga ima in ${auxString}`)
         }
 
         else {
@@ -29,6 +27,5 @@ const picante = (myArray) => {
 
 }
 
-console.log(picante([9, 8, 4, 5, 6, 7, 1, 9]));
 
 export { picante }
